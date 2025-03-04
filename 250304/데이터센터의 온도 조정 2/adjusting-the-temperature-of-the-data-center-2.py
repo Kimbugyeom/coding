@@ -18,7 +18,7 @@ for i in range(N):
     my_num = ranges[i][1]
     using_num = max(max_num, my_num)
 
-for i in range(using_num):
+for i in range(1000):
     num = i
     total_score = 0
     for k in range(N):
