@@ -2,15 +2,15 @@ inp = [list(map(int, input())) for _ in range(3)]
 
 max_num = 9
 cnt = 0
+total_list = []
 
 for i in range(1, max_num + 1):
-    for j in range(i + 1, max_num + 1):
+    for j in range(1, max_num + 1):
         if i == j:
             continue
 
-        found = False  # j 루프 시작 시 초기화
+        found = False
 
-        # 가로 체크
         for k in range(3):
             if (inp[k][0] in [i, j] and inp[k][1] in [i, j] and inp[k][2] in [i, j]) and \
                not (inp[k][0] == i and inp[k][1] == i and inp[k][2] == i) and \
@@ -18,7 +18,6 @@ for i in range(1, max_num + 1):
                 found = True
                 break
 
-        # 세로 체크
         if not found:
             for k in range(3):
                 if (inp[0][k] in [i, j] and inp[1][k] in [i, j] and inp[2][k] in [i, j]) and \
@@ -27,7 +26,6 @@ for i in range(1, max_num + 1):
                     found = True
                     break
 
-        # 대각선 체크
         if not found:
             if (inp[0][0] in [i, j] and inp[1][1] in [i, j] and inp[2][2] in [i, j]) and \
                not (inp[0][0] == i and inp[1][1] == i and inp[2][2] == i) and \
@@ -41,8 +39,13 @@ for i in range(1, max_num + 1):
                 found = True
 
         if found:
-            cnt += 1
-            break 
+            if i > j:
+                my_list = [j, i]
+            else:
+                my_list = [i, j]
+            if not my_list in total_list:
+                total_list.append(my_list)
+                break 
 
-print(cnt)
+print(len(total_list))
 
