@@ -22,7 +22,7 @@ for elem in a:
         max_cnt = cnt
         max_idx = x
 
-if max_idx == max(num):
+if max_cnt == 0:
     print(0)
 else:
-    print(max_idx) 
+    print(max_idx)
