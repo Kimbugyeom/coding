@@ -3,6 +3,8 @@ num = [int(input()) for _ in range(N)]
 
 # Please write your code here.
 max_cnt = 0
+max_idx = 0
+
 for elem in range(1, 1000001):
     x = elem
     cnt = 0
@@ -17,4 +19,7 @@ for elem in range(1, 1000001):
         max_cnt = cnt
         max_idx = x
 
-print(max_idx) 
+if max_idx == 1000000:
+    print(0)
+else:
+    print(max_idx) 
