@@ -5,7 +5,7 @@ a, b = list(a), list(b)
 
 # Please write your code here.
 
-for i in range(1, 100):
+for i in range(1, 100000):
     x = 2*i
 
     for j in range(n):
