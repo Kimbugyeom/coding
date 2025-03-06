@@ -10,7 +10,7 @@ for elem in range(1, 1000001):
         for j in range(N):
             if i == j:
                 continue
-            if num[i] == elem and num[j] == elem and abs(i - j) <= 3:
+            if num[i] == elem and num[j] == elem and abs(i - j) <= K:
                 cnt += 1
 
     if max_cnt <= cnt:
