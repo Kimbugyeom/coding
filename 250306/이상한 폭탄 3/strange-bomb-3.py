@@ -1,11 +1,14 @@
 N, K = map(int, input().split())
 num = [int(input()) for _ in range(N)]
 
+a = list(set(num))
+a.sort()
+
 # Please write your code here.
 max_cnt = 0
 max_idx = 0
 
-for elem in range(1, 1000001):
+for elem in a:
     x = elem
     cnt = 0
     for i in range(N):
@@ -19,7 +22,7 @@ for elem in range(1, 1000001):
         max_cnt = cnt
         max_idx = x
 
-if max_idx == 1000000:
+if max_idx == max(num):
     print(0)
 else:
     print(max_idx) 
