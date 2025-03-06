@@ -4,9 +4,11 @@ heights = [int(input()) for _ in range(N)]
 # Please write your code here.
 a = list(set(heights))
 a.sort()
-min_cost = 10000
 
-for elem in a:
+import sys
+min_cost = sys.maxsize
+
+for elem in range(1, max(heights) + 1):
     min_elem, max_elem = elem, elem + 17
     cost = 0
     for h_elem in heights:
