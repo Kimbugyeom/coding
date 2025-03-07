@@ -3,7 +3,7 @@ a = list(map(int, input().split()))
 
 # Please write your code here.
 my_list = []
-for elem in a:
+for elem in range(1, 101):
     dist = elem
     cnt = 0
     using_L = L
