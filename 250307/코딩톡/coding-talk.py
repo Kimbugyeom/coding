@@ -13,6 +13,8 @@ for i in range(m):
     user, num = c[i], u[i]
     if i >= p - 1:
         read_list.append(user)
+    if p - 1 == 0:
+        read_list = user_list
 
 for elem in user_list:
     if elem not in read_list:
