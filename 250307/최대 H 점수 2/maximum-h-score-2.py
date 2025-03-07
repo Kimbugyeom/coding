@@ -3,7 +3,7 @@ a = list(map(int, input().split()))
 
 # Please write your code here.
 my_list = []
-for elem in b:
+for elem in a:
     dist = elem
     cnt = 0
     using_L = L
