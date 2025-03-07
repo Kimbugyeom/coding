@@ -1,7 +1,6 @@
 N, L = map(int, input().split())
 a = list(map(int, input().split()))
-b = list(set(a))
-b.sort()
+
 # Please write your code here.
 my_list = []
 for elem in b:
