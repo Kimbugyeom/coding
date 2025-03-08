@@ -3,7 +3,7 @@ a, b, x, y = map(int, input().split())
 # Please write your code here.
 dist = []
 
-case1 = b - a
+case1 = abs(b - a)
 dist.append(case1)
 
 case2 = abs(a - x) + abs(b- y)
