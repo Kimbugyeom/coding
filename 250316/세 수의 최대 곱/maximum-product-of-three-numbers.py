@@ -18,11 +18,6 @@ for i in range(n):
 plus.sort(reverse = True)
 minus.sort()
 
-#  + + +
-max_plus = plus[0] * plus[1] * plus[2]
-# - - +
-max_minus = plus[0] * minus[0] * minus[1]
-
 if len(plus) >= 3:
     max_plus = plus[0] * plus[1] * plus[2]
     if len(minus) >= 2:
