@@ -27,7 +27,7 @@ for i, j in zip(c, s):
 
     winner.append(new_count) 
 
-winner[0] = [0, 0, 0]
+winner[0] = [1,1,1]
 
 cnt = 0
 for i in range(n):
