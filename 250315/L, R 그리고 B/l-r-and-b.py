@@ -23,6 +23,9 @@ B = B_x + B_y
 L = L_x + L_y
 
 if B_x == R_x == L_x or L_y == B_y == R_y:
-    print(abs(B - L) + 1)
+    if (R_x < B_x and R_x < L_x) or (B_x < R_x and B_x < R_x) or (R_y < B_y and R_y < L_y) or (B_y < R_y and B_y < R_y):
+        print(abs(B - L) - 1)
+    else:
+        print(abs(B - L) + 1)
 else:
     print(abs(B - L) - 1)
