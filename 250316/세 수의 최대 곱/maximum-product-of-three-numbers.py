@@ -2,7 +2,9 @@ n = int(input())
 arr = list(map(int, input().split()))
 
 # Please write your code here.
-max_num = 0
+import sys
+
+max_num = -sys.maxsize
 
 for i in range(n):
     for j in range(i + 1, n):
